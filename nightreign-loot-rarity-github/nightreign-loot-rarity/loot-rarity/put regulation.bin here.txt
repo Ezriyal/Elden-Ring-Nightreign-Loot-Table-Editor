@@ -1,0 +1,2 @@
+Save the regulation.bin built by Nightreign-Loot-Rarity-Editor.html in this folder.
+ME3 loads it when you launch the game with "Loot Rarity.me3".
