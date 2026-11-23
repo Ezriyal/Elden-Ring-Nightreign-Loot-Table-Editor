@@ -1,0 +1,19 @@
+profileVersion = "v1"
+
+[[supports]]
+game = "nightreign"
+
+# Add your other mods above loot-rarity, for example:
+#
+# [[packages]]
+# id = "mymod"
+# path = 'mod'
+#
+# If one of them has its own regulation.bin, build the loot-rarity file FROM that
+# regulation.bin in the editor, and uncomment the load_after line below so the
+# loot-rarity copy wins.
+
+[[packages]]
+id = "loot-rarity"
+path = 'loot-rarity'
+# load_after = [{ id = "mymod", optional = false }]
