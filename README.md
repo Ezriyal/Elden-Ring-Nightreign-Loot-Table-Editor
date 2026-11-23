@@ -90,7 +90,7 @@ Delete `loot-rarity\regulation.bin`, or launch the game without this profile. No
 - `regulation.bin` is AES-256-CBC encrypted, then zstd-compressed (DCX), and holds a BND4 archive of all game params.
 - Rarity is rolled in `ItemLotParam_enemy`, `ItemLotParam_map` and `ItemTableParam`. The editor follows every loot entry down through nested item tables to `EquipParamCustomWeapon` and then to `EquipParamWeapon.rarity` (or talisman and goods rarity). It then reweights the entries of every table whose entries lead to different rarities.
 - Added rarities go into empty slots of the loot row and copy the slot settings of an existing weapon entry.
-- The new file is packed with **zstd 1.5.7** compiled to WebAssembly, using the same settings as Smithbox: level 15, 64 KiB window, no content size or checksum field. The game crashes on files with zstd blocks larger than 64 KiB, which is why the packing matters.
+- The new file is packed with **zstd 1.5.7** compiled to WebAssembly, using the same settings as Smithbox: level 15, 64 KiB window, no content size or checksum field. The game rejects files packed by other zstd encoders, which is why the editor uses the real zstd library with Smithbox's settings.
 - After building, the editor decrypts and decompresses its own output and compares it byte for byte with the intended data before you can save it.
 
 ## Building from source
