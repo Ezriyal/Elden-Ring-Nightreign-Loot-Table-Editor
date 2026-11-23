@@ -6,7 +6,7 @@ The editor reads your `regulation.bin`, vanilla or modded. It lists every loot t
 
 The editor is a single web page that runs in your browser. Nothing gets installed, and your files never leave your computer.
 
-<!-- If GitHub Pages is turned on for this repository, link the online editor here. -->
+https://ezriyal.github.io/Elden-Ring-Nightreign-Loot-Table-Editor/Nightreign-Loot-Rarity-Editor.html
 
 ![The editor with the "Better odds" quick start applied to unmodded game data](docs/screenshot.png)
 
